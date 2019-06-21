@@ -1,9 +1,8 @@
-import styled, { css, keyframes } from "styled-components";
+import styled, { keyframes } from "styled-components";
 
 const fade = keyframes`
-0% {
+80% {
   opacity: 1;
-  visibility: visible;
 }
 100% {
   opacity: 0;
