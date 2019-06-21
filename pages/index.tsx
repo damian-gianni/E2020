@@ -14,7 +14,7 @@ export default () => (
         style={{ width: "50%" }}
       />
       <div>
-        <strong>PROXIMAMENTE...</strong>
+        <h2>PROXIMAMENTE...</h2>
       </div>
     </div>
     {/* <Link href="/about">
