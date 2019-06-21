@@ -1,5 +1,6 @@
 // import Link from "next/link";
-import styled, { css, keyframes } from "styled-components";
+import Head from "next/head";
+import styled from "styled-components";
 import Splash from "../components/ui/splash";
 import { AppBar, Toolbar, CssBaseline } from "@material-ui/core";
 
@@ -13,6 +14,9 @@ export default () => {
 
   return (
     <div>
+      <Head>
+        <title>Estudiantes 2020</title>
+      </Head>
       <CssBaseline />
       <AppBar position="static">
         <Toolbar>Estudiantes 2020</Toolbar>
