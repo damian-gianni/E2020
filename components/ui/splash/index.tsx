@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { Loader, SplashContainer } from "./splash.styled";
 
 export default () => {

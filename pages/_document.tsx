@@ -4,6 +4,7 @@ import { ServerStyleSheets } from "@material-ui/styles";
 import { ServerStyleSheet } from "styled-components";
 import flush from "styled-jsx/server";
 import theme from "../src/theme";
+import { url } from "inspector";
 
 class MyDocument extends Document {
   render() {
@@ -39,11 +40,20 @@ class MyDocument extends Document {
             sizes="16x16"
             href="https://estudiantes2020.sfo2.digitaloceanspaces.com/favicon/favicon-16x16.png"
           />
-          <link rel="mask-icon" href="https://estudiantes2020.sfo2.digitaloceanspaces.com/favicon/safari-pinned-tab.svg" color="#3f3f3f" />
+          <link
+            rel="mask-icon"
+            href="https://estudiantes2020.sfo2.digitaloceanspaces.com/favicon/safari-pinned-tab.svg"
+            color="#3f3f3f"
+          />
           <meta name="msapplication-TileColor" content="#dcdcdc" />
           <meta name="theme-color" content="#ffffff" />
         </Head>
-        <body>
+        <body
+          style={{
+            backgroundImage:
+              "url(https://estudiantes2020.sfo2.digitaloceanspaces.com/bg-repeat_128x128.jpg)"
+          }}
+        >
           <Main />
           <NextScript />
         </body>

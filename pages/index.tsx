@@ -1,8 +1,8 @@
-// import Link from "next/link";
 import Head from "next/head";
 import styled from "styled-components";
 import Splash from "../components/ui/splash";
-import { AppBar, Toolbar, CssBaseline } from "@material-ui/core";
+import { CssBaseline } from "@material-ui/core";
+import Menu from "../components/Menu";
 
 export default () => {
   const ImgCommingSoon = styled.img`
@@ -18,18 +18,13 @@ export default () => {
         <title>Estudiantes 2020</title>
       </Head>
       <CssBaseline />
-      <AppBar position="static">
-        <Toolbar>Estudiantes 2020</Toolbar>
-      </AppBar>
+      <Menu />
       <div style={{ textAlign: "center", marginTop: "50px" }}>
         <ImgCommingSoon src="https://estudiantes2020.sfo2.digitaloceanspaces.com/logo-app.png" />
         <div>
           <h2>PROXIMAMENTE...</h2>
         </div>
       </div>
-      {/* <Link href="/about">
-      <span>about</span>
-    </Link> */}
       <Splash />
     </div>
   );
