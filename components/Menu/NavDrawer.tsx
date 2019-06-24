@@ -1,14 +1,14 @@
 import Link from "next/link";
 import {
+  Box,
   Drawer,
   List,
   ListItem,
-  ListItemText,
-  Toolbar,
   Typography,
-  Divider
+  Divider,
+  ListItemText
 } from "@material-ui/core";
-import { IconE2020 } from "./IconE2020";
+import { CustomIcon, CustomToolbar, IconE2020 } from "./Menu.styled";
 
 export default ({ drawerOpened, toggleDrawer }) => {
   return (
@@ -21,30 +21,58 @@ export default ({ drawerOpened, toggleDrawer }) => {
         onClick={() => toggleDrawer(false)}
         onKeyDown={() => toggleDrawer(false)}
       >
-        <Toolbar>
-          <IconE2020 />
-          <Typography variant="caption" color="inherit">
-            Estudiantes 2020
-          </Typography>
-        </Toolbar>
+        <CustomToolbar>
+          <List disablePadding={true}>
+            <ListItem disableGutters={true} dense={true}>
+              <IconE2020 />
+            </ListItem>
+            <ListItem disableGutters={true} dense={true}>
+              <Typography component="h2">
+                <Box fontWeight="fontWeightBold" fontSize={16}>
+                  Estudiantes 2020
+                </Box>
+              </Typography>
+            </ListItem>
+          </List>
+        </CustomToolbar>
         <Divider />
         <List>
-          <ListItem button key={"Home"}>
-            <Link href="/about">
-              <ListItemText primary={"Home"} />
+          <ListItem button key={"Home"} divider={true}>
+            <Link href="/">
+              <Box fontSize={12} fontWeight="fontWeightBold">
+                <CustomIcon fontSize={"small"}>home</CustomIcon>Home
+              </Box>
             </Link>
           </ListItem>
-          <ListItem button key={"Que es E2020"}>
-            <ListItemText primary={"Que es E2020"} />
+          <ListItem button key={"Que es E2020"} divider={true}>
+            <Link href="/about-this">
+              <Box fontSize={12} fontWeight="fontWeightBold">
+                <CustomIcon fontSize={"small"}>star</CustomIcon>Que es E2020
+              </Box>
+            </Link>
           </ListItem>
-          <ListItem button key={"Proyectos"}>
-            <ListItemText primary={"Proyectos"} />
+          <ListItem button key={"Proyectos"} divider={true}>
+            <Link href="/projects">
+              <Box fontSize={12} fontWeight="fontWeightBold">
+                <CustomIcon fontSize={"small"}>folder_special</CustomIcon>
+                Proyectos
+              </Box>
+            </Link>
           </ListItem>
-          <ListItem button key={"Quienes somos"}>
-            <ListItemText primary={"Quienes somos"} />
+          <ListItem button key={"Quienes somos"} divider={true}>
+            <Link href="/about-us">
+              <Box fontSize={12} fontWeight="fontWeightBold">
+                <CustomIcon fontSize={"small"}>people</CustomIcon>Quienes somos
+              </Box>
+            </Link>
           </ListItem>
-          <ListItem button key={"Album de Figuritas"}>
-            <ListItemText primary={"Album de Figuritas"} />
+          <ListItem button key={"Album de Figuritas"} divider={true}>
+            <Link href="/album">
+              <Box fontSize={12} fontWeight="fontWeightBold">
+                <CustomIcon fontSize={"small"}>photo_album</CustomIcon>Album de
+                Figuritas
+              </Box>
+            </Link>
           </ListItem>
         </List>
       </div>

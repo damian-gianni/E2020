@@ -47,6 +47,8 @@ class MyDocument extends Document {
           />
           <meta name="msapplication-TileColor" content="#dcdcdc" />
           <meta name="theme-color" content="#ffffff" />
+          <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
+          <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
         </Head>
         <body
           style={{
