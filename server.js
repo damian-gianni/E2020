@@ -1,4 +1,6 @@
-const express = require("express");
+const { createServer } = require("http");
+const { parse } = require("url");
+const { join } = require("path");
 const next = require("next");
 const https = require("https");
 const pem = require("pem");
@@ -11,11 +13,6 @@ const PORT = dev ? 3000 : 80;
 app
   .prepare()
   .then(() => {
-    const server = express();
-
-    server.get("*", (req, res) => {
-      return handle(req, res);
-    });
     if (HTTPS) {
       pem.createCertificate({ days: 1, selfSigned: true }, function(err, keys) {
         https
@@ -32,7 +29,19 @@ app
           });
       });
     } else {
-      server.listen(PORT, err => {
+      createServer((req, res) => {
+        const parsedUrl = parse(req.url, true);
+        const { pathname } = parsedUrl;
+
+        // handle GET request to /service-worker.js
+        if (pathname === "/service-worker.js") {
+          const filePath = join(__dirname, ".next", pathname);
+
+          app.serveStatic(req, res, filePath);
+        } else {
+          handle(req, res, parsedUrl);
+        }
+      }).listen(PORT, err => {
         if (err) throw err;
         console.log(`> Ready on http://localhost:${PORT}`);
       });

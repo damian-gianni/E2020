@@ -4,7 +4,6 @@ import { ServerStyleSheets } from "@material-ui/styles";
 import { ServerStyleSheet } from "styled-components";
 import flush from "styled-jsx/server";
 import theme from "../src/theme";
-import { url } from "inspector";
 
 class MyDocument extends Document {
   render() {
