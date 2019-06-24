@@ -77,7 +77,7 @@ const manifestConfig = {
   background_color: "#ffffff",
   start_url: "https://estudiantes2020.com.ar",
   display: "standalone",
-  orientation: "landscape"
+  orientation: "portrait"
 };
 module.exports = withOffline(
   withTypescript(
