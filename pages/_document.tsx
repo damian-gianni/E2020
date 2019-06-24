@@ -17,6 +17,15 @@ class MyDocument extends Document {
             name="viewport"
             content="minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=no"
           />
+          <meta
+            name="description"
+            content="Sitio web oficial de la agrupación de socios Estudiantes2020 del Club Atlético Estudiantes"
+          />
+          <meta
+            name="keywords"
+            content="Estudiantes2020, Club Atlético Estudiantes, EstudiantesBA, Estudiantes buenos aires, estudiantes de caseros, caseros"
+          />
+          <meta name="author" content="Damian Gianni" />
           {/* PWA primary color */}
           <meta name="theme-color" content={theme.palette.primary.main} />
           <link
@@ -47,8 +56,14 @@ class MyDocument extends Document {
           />
           <meta name="msapplication-TileColor" content="#dcdcdc" />
           <meta name="theme-color" content="#ffffff" />
-          <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
-          <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+          <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+          />
+          <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/icon?family=Material+Icons"
+          />
         </Head>
         <body
           style={{
