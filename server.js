@@ -8,7 +8,7 @@ const dev = process.env.NODE_ENV !== "production";
 const app = next({ dev });
 const handle = app.getRequestHandler();
 const { HOST = "localhost", HTTPS } = process.env;
-const PORT = dev ? 3000 : 80;
+const PORT = dev ? 3000 : 3000;
 
 app
   .prepare()
