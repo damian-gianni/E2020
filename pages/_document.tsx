@@ -1,5 +1,6 @@
 import React from "react";
 import Document, { Head, Main, NextScript } from "next/document";
+import Manifest from "next-manifest/manifest";
 import { ServerStyleSheets } from "@material-ui/styles";
 import { ServerStyleSheet } from "styled-components";
 import flush from "styled-jsx/server";
@@ -10,6 +11,7 @@ class MyDocument extends Document {
     return (
       <html lang="es">
         <Head>
+          <Manifest />
           <meta charSet="utf-8" />
           {/* Use minimum-scale=1 to enable GPU rasterization */}
           <meta
