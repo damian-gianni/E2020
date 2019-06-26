@@ -5,6 +5,13 @@ import Article from "../../components/Article";
 import PROJECTS from "../../resources/projects";
 import { ContentFlex } from "./projects.styled";
 
+import dynamic from "next/dynamic";
+
+const DynamicProject = dynamic(() => import("./project"), {
+  ssr: false,
+  loading: () => <p>...</p>
+});
+
 export default () => (
   <WithTemplate>
     <Head>
@@ -19,6 +26,7 @@ export default () => (
       {PROJECTS.map(project => {
         return <Article content={project} />;
       })}
+      <DynamicProject />
     </ContentFlex>
   </WithTemplate>
 );

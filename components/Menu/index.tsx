@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { AppBar, IconButton, Toolbar } from "@material-ui/core";
+import { IconButton, Toolbar } from "@material-ui/core";
 import MenuIcon from "@material-ui/icons/Menu";
 import NavDrawer from "./NavDrawer";
 import { CustomAppBar, IconEstudiantes } from "./Menu.styled";

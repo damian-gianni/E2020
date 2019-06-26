@@ -45,43 +45,51 @@ export default ({ drawerOpened, toggleDrawer }) => {
         </CustomToolbar>
         <Divider />
         <List>
-          <ListItem button key={"Home"} divider={true}>
-            <Link href="/">
+          <Link href="/">
+            <ListItem button key={"Home"} divider={true}>
               <Box fontSize={12} fontWeight="fontWeightBold">
                 <CustomIcon fontSize={"small"}>home</CustomIcon>Home
               </Box>
-            </Link>
-          </ListItem>
-          <ListItem button key={"Que es E2020"} divider={true}>
-            <Link href="/about-this">
+            </ListItem>
+          </Link>
+
+          <Link href="/about-this">
+            <ListItem button key={"Que es E2020"} divider={true}>
               <Box fontSize={12} fontWeight="fontWeightBold">
                 <CustomIcon fontSize={"small"}>star</CustomIcon>Que es E2020
               </Box>
-            </Link>
-          </ListItem>
-          <ListItem button key={"Proyectos"} divider={true}>
-            <Link href="/projects">
+            </ListItem>
+          </Link>
+          <Link href="/projects">
+            <ListItem button key={"Proyectos"} divider={true}>
               <Box fontSize={12} fontWeight="fontWeightBold">
                 <CustomIcon fontSize={"small"}>folder_special</CustomIcon>
                 Proyectos
               </Box>
-            </Link>
-          </ListItem>
-          <ListItem button key={"Quienes somos"} divider={true}>
-            <Link href="/about-us">
+            </ListItem>
+          </Link>
+          <Link href="/about-us">
+            <ListItem button key={"Quienes somos"} divider={true}>
               <Box fontSize={12} fontWeight="fontWeightBold">
                 <CustomIcon fontSize={"small"}>people</CustomIcon>Quienes somos
               </Box>
-            </Link>
-          </ListItem>
-          <ListItem button key={"Album de Figuritas"} divider={true}>
-            <Link href="/album">
+            </ListItem>
+          </Link>
+          <Link href="/album">
+            <ListItem button key={"Album de Figuritas"} divider={true}>
               <Box fontSize={12} fontWeight="fontWeightBold">
                 <CustomIcon fontSize={"small"}>photo_album</CustomIcon>Album de
                 Figuritas
               </Box>
-            </Link>
-          </ListItem>
+            </ListItem>
+          </Link>
+          <Link href="/museo">
+            <ListItem button key={"Museo digital"} divider={true}>
+              <Box fontSize={12} fontWeight="fontWeightBold">
+                <CustomIcon fontSize={"small"}>cast_for_education</CustomIcon>Museo digital
+              </Box>
+            </ListItem>
+          </Link>
         </List>
       </div>
     </Drawer>
