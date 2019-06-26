@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Icon, Toolbar } from "@material-ui/core";
+import { Icon, Toolbar, AppBar } from "@material-ui/core";
 
 export const IconE2020 = styled.div`
   background-image: url(https://estudiantes2020.sfo2.digitaloceanspaces.com/logo-app_128x128.png);
@@ -57,4 +57,8 @@ export const IconInstagram = styled(SocialIcon)`
   background-image: url(https://estudiantes2020.sfo2.digitaloceanspaces.com/logo-redes_419x128.png);
   right: 84px;
   background-position-x: -55px;
+`;
+
+export const CustomAppBar = styled(AppBar)`
+  opacity: 0.85;
 `;

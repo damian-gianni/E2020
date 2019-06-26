@@ -1,9 +1,10 @@
 import { useState } from "react";
-import { AppBar, Toolbar, IconButton, Typography } from "@material-ui/core";
+import { AppBar, IconButton, Toolbar } from "@material-ui/core";
 import MenuIcon from "@material-ui/icons/Menu";
 import NavDrawer from "./NavDrawer";
-import { IconEstudiantes } from "./Menu.styled";
+import { CustomAppBar, IconEstudiantes } from "./Menu.styled";
 import SocialNetworks from "./SocialNetworks";
+
 export default () => {
   const [drawerOpened, openDrawer] = useState(false);
 
@@ -13,7 +14,7 @@ export default () => {
 
   return (
     <div className="App">
-      <AppBar position="static">
+      <CustomAppBar position="fixed">
         <Toolbar>
           <IconButton
             color="inherit"
@@ -22,10 +23,10 @@ export default () => {
           >
             <MenuIcon />
           </IconButton>
-          <SocialNetworks/>
+          <SocialNetworks />
           <IconEstudiantes />
         </Toolbar>
-      </AppBar>
+      </CustomAppBar>
 
       <NavDrawer drawerOpened={drawerOpened} toggleDrawer={toggleDrawer} />
     </div>
