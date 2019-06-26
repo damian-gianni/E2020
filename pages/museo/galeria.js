@@ -1,4 +1,9 @@
-import Coverflow from "react-coverflow";
+import dynamic from "next/dynamic";
+
+const Coverflow = dynamic(async () => await import("react-coverflow"), {
+  ssr: false,
+  loading: () => <p>...</p>
+});
 
 export default () => (
   <Coverflow
@@ -27,7 +32,7 @@ export default () => (
     <img
       src="https://estudiantes2020.sfo2.digitaloceanspaces.com/museum/saenz%20pen%CC%83a.jpg"
       alt="Saenz peña"
-      // data-action="http://andyyou.github.io/react-coverflow/"
+      //data-action="http://andyyou.github.io/react-coverflow/"
     />
   </Coverflow>
 );

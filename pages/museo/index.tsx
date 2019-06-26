@@ -1,12 +1,7 @@
 import Head from "next/head";
 import { Typography, Box } from "@material-ui/core";
 import WithTemplate from "../../components/Template";
-import dynamic from "next/dynamic";
-
-const DynamicGaleria = dynamic(() => import("./galeria"), {
-  ssr: false,
-  loading: () => <p>...</p>
-});
+import DynamicGaleria from "./galeria";
 
 export default () => {
   return (
