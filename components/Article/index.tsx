@@ -1,42 +1,39 @@
+import React from "react";
 import {
-  Avatar,
-  Card,
+  // CardActions,
+  // Button,
+  CardActionArea,
   CardContent,
-  CardHeader,
   CardMedia,
-  CardActions,
-  IconButton,
   Typography
 } from "@material-ui/core";
-import { Favorite, MoreVert, Share } from "@material-ui/icons";
+import { CustomCard } from "./Article.styled";
 
-export default (article) => {
-  return (
-    <Card>
-      <CardHeader
-        avatar={<Avatar aria-label="Recipe">R</Avatar>}
-        action={
-          <IconButton aria-label="Settings">
-            <MoreVert />
-          </IconButton>
-        }
-        title={article.title}
-        subheader={article.creation_date}
+export default ({ content }) => (
+  <CustomCard>
+    <CardActionArea>
+      <CardMedia
+        component="img"
+        alt={content.image.alt}
+        image={content.image.url}
+        title={content.title}
       />
-      <CardMedia image={article.image.url} title={article.image.alt} />
       <CardContent>
+        <Typography gutterBottom variant="h5" component="h2">
+          {content.title}
+        </Typography>
         <Typography variant="body2" color="textSecondary" component="p">
-          {article.short_description}
+          {content.description}
         </Typography>
       </CardContent>
-      <CardActions disableSpacing>
-        <IconButton aria-label="Add to favorites">
-          <Favorite />
-        </IconButton>
-        <IconButton aria-label="Share">
-          <Share />
-        </IconButton>
-      </CardActions>
-    </Card>
-  );
-};
+    </CardActionArea>
+    {/* <CardActions>
+      <Button size="small" color="primary">
+        Share
+      </Button>
+      <Button size="small" color="primary">
+        Learn More
+      </Button>
+    </CardActions> */}
+  </CustomCard>
+);

@@ -2,6 +2,7 @@ import { memo } from "react";
 import Head from "next/head";
 import { CssBaseline } from "@material-ui/core";
 import Menu from "../Menu";
+import { MainSection } from "./Template.styled";
 
 const WithTheme = ({ children }) => {
   return (
@@ -11,7 +12,7 @@ const WithTheme = ({ children }) => {
       </Head>
       <CssBaseline />
       <Menu />
-      {children}
+      <MainSection>{children}</MainSection>
     </div>
   );
 };

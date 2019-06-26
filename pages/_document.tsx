@@ -4,7 +4,7 @@ import Manifest from "next-manifest/manifest";
 import { ServerStyleSheets } from "@material-ui/styles";
 import { ServerStyleSheet } from "styled-components";
 import flush from "styled-jsx/server";
-import theme from "../src/theme";
+import theme from "../theme";
 
 class MyDocument extends Document {
   render() {
@@ -66,12 +66,7 @@ class MyDocument extends Document {
             href="https://fonts.googleapis.com/icon?family=Material+Icons"
           />
         </Head>
-        <body
-          style={{
-            backgroundImage:
-              "url(https://estudiantes2020.sfo2.digitaloceanspaces.com/bg-repeat_128x128.jpg)"
-          }}
-        >
+        <body>
           <Main />
           <NextScript />
         </body>
@@ -81,7 +76,6 @@ class MyDocument extends Document {
 }
 
 MyDocument.getInitialProps = async ctx => {
-
   // Render app and page and get the context of the page with collected side effects.
   const sheet = new ServerStyleSheet();
   const sheets = new ServerStyleSheets();

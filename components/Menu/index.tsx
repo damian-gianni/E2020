@@ -1,18 +1,13 @@
 import { useState } from "react";
-
-import {
-  AppBar,
-  Toolbar,
-  IconButton,
-  Typography
-} from "@material-ui/core";
+import { AppBar, Toolbar, IconButton, Typography } from "@material-ui/core";
 import MenuIcon from "@material-ui/icons/Menu";
 import NavDrawer from "./NavDrawer";
-
+import { IconEstudiantes } from "./Menu.styled";
+import SocialNetworks from "./SocialNetworks";
 export default () => {
   const [drawerOpened, openDrawer] = useState(false);
 
-  const toggleDrawer = (drawerToggle) => {
+  const toggleDrawer = drawerToggle => {
     openDrawer(drawerToggle);
   };
 
@@ -27,9 +22,8 @@ export default () => {
           >
             <MenuIcon />
           </IconButton>
-          <Typography variant="caption" color="inherit">
-            Estudiantes 2020
-          </Typography>
+          <SocialNetworks/>
+          <IconEstudiantes />
         </Toolbar>
       </AppBar>
 

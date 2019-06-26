@@ -28,7 +28,15 @@ export default ({ drawerOpened, toggleDrawer }) => {
             </ListItem>
             <ListItem disableGutters={true} dense={true}>
               <Typography component="h2">
-                <Box fontWeight="fontWeightBold" fontSize={16}>
+                <Box
+                  fontWeight="fontWeightBold"
+                  fontSize={16}
+                  style={{
+                    color: "#FFF",
+                    textShadow:
+                      "1px 0 0 #000, -1px 0 0 #000, 0 1px 0 #000, 0 -1px 0 #000"
+                  }}
+                >
                   Estudiantes 2020
                 </Box>
               </Typography>

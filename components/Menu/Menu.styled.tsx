@@ -21,3 +21,40 @@ export const CustomIcon = styled(Icon)`
   margin-right: 10px;
   vertical-align: bottom;
 `;
+
+export const IconEstudiantes = styled.div`
+  background-image: url(https://estudiantes2020.sfo2.digitaloceanspaces.com/escudo_128x128.png);
+  background-size: cover;
+  width: 36px;
+  height: 36px;
+  position: absolute;
+  left: 50%;
+  margin-left: -20px;
+`;
+const SocialIcon = styled.a`
+  cursor: pointer;
+  height: 24px;
+  width: 24px;
+  background-size: cover;
+  position: absolute;
+  transition: 1s filter linear
+  &:hover {
+    filter: brightness(200%);
+  }
+`;
+export const IconFacebook = styled(SocialIcon)`
+  background-image: url(https://estudiantes2020.sfo2.digitaloceanspaces.com/logo-redes_419x128.png);
+  right: 20px;
+`;
+
+export const IconTwitter = styled(SocialIcon)`
+  background-image: url(https://estudiantes2020.sfo2.digitaloceanspaces.com/logo-redes_419x128.png);
+  right: 52px;
+  background-position-x: 52px;
+`;
+
+export const IconInstagram = styled(SocialIcon)`
+  background-image: url(https://estudiantes2020.sfo2.digitaloceanspaces.com/logo-redes_419x128.png);
+  right: 84px;
+  background-position-x: -55px;
+`;
