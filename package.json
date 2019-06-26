@@ -25,12 +25,13 @@
     "react": "^16.7.0",
     "react-coverflow": "^0.2.20",
     "react-dom": "^16.7.0",
-    "react-pdf": "^4.1.0",
-    "react-pdf-reader": "^0.1.8",
     "styled-components": "^4.3.2",
     "typescript": "3.5.2"
   },
   "license": "ISC",
   "keywords": [],
-  "description": ""
+  "description": "",
+  "devDependencies": {
+    "extract-text-webpack-plugin": "^4.0.0-beta.0"
+  }
 }

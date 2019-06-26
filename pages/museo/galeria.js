@@ -15,17 +15,14 @@ export default () => (
     <img
       src="https://estudiantes2020.sfo2.digitaloceanspaces.com/museum/IMG_8347.JPG"
       alt="Camiseta 2"
-      // data-action="http://andyyou.github.io/react-coverflow/"
     />
     <img
       src="https://estudiantes2020.sfo2.digitaloceanspaces.com/museum/IMG_8349.JPG"
       alt="Camiseta 3"
-      // data-action="http://andyyou.github.io/react-coverflow/"
     />
     <img
       src="https://estudiantes2020.sfo2.digitaloceanspaces.com/museum/IMG_8348.JPG"
       alt="Camiseta 4"
-      // data-action="http://andyyou.github.io/react-coverflow/"
     />
     <img
       src="https://estudiantes2020.sfo2.digitaloceanspaces.com/museum/saenz%20pen%CC%83a.jpg"
