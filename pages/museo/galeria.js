@@ -9,9 +9,9 @@ export default () => (
   <Coverflow
     width={960}
     height={480}
-    displayQuantityOfSide={2}
+    displayQuantityOfSide={1}
     navigation={false}
-    enableHeading={true}
+    enableHeading={false}
   >
     <img
       src="https://estudiantes2020.sfo2.digitaloceanspaces.com/museum/IMG_8350.JPG"
