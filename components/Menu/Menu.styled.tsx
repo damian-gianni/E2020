@@ -33,8 +33,8 @@ export const IconEstudiantes = styled.div`
 `;
 const SocialIcon = styled.a`
   cursor: pointer;
-  height: 24px;
-  width: 24px;
+  height: 38px;
+  width: 38px;
   background-size: cover;
   position: absolute;
   transition: 1s filter linear
@@ -44,19 +44,19 @@ const SocialIcon = styled.a`
 `;
 export const IconFacebook = styled(SocialIcon)`
   background-image: url(https://estudiantes2020.sfo2.digitaloceanspaces.com/logo-redes_419x128.png);
-  right: 20px;
+  right: 120px;
 `;
 
 export const IconTwitter = styled(SocialIcon)`
   background-image: url(https://estudiantes2020.sfo2.digitaloceanspaces.com/logo-redes_419x128.png);
-  right: 52px;
-  background-position-x: 52px;
+  right: 70px;
+  background-position-x: -43px;
 `;
 
 export const IconInstagram = styled(SocialIcon)`
   background-image: url(https://estudiantes2020.sfo2.digitaloceanspaces.com/logo-redes_419x128.png);
-  right: 84px;
-  background-position-x: -55px;
+  right: 20px;
+  background-position-x: -86px;
 `;
 
 export const CustomAppBar = styled(AppBar)`

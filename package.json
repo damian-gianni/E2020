@@ -30,8 +30,5 @@
   },
   "license": "ISC",
   "keywords": [],
-  "description": "",
-  "devDependencies": {
-    "extract-text-webpack-plugin": "^4.0.0-beta.0"
-  }
+  "description": ""
 }

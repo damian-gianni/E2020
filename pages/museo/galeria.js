@@ -9,7 +9,7 @@ export default () => (
   <Coverflow
     width={960}
     height={480}
-    displayQuantityOfSide={1}
+    displayQuantityOfSide={2}
     navigation={false}
     enableHeading={true}
   >

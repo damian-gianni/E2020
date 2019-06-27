@@ -9,8 +9,8 @@ import {
 } from "@material-ui/core";
 import { CustomCard } from "./Article.styled";
 
-export default ({ content }) => (
-  <CustomCard>
+export default ({ actionClick, content }) => (
+  <CustomCard onClick={() => actionClick(content)}>
     <CardActionArea>
       <CardMedia
         component="img"
