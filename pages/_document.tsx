@@ -66,6 +66,7 @@ class MyDocument extends Document {
             href="https://fonts.googleapis.com/icon?family=Material+Icons"
           />
           <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async />
+          <script src="https://estudiantes2020.sfo2.digitaloceanspaces.com/scripts/sw.js" async />
         </Head>
         <body>
           <Main />
