@@ -1,3 +1,4 @@
+const withPlugins = require("next-compose-plugins");
 const withTypescript = require("@zeit/next-typescript");
 const withOffline = require("next-offline");
 const withManifest = require("next-manifest");
@@ -80,15 +81,35 @@ const manifestConfig = {
   display: "standalone",
   orientation: "portrait"
 };
-module.exports = withOffline(
-  withTypescript(
-    withManifest({
+module.exports = withPlugins([
+  [
+    withOffline,
+    {
+      workboxOpts: {
+        importScripts: ["https://cdn.pushalert.co/sw-12482.js", "https://estudiantes2020.sfo2.digitaloceanspaces.com/scripts/sw.js"]
+      }
+    }
+  ],
+  [withTypescript],
+  [
+    withManifest,
+    {
       manifest: {
         ...manifestConfig
-      },
-      workboxOpts: {
-        importScripts: ['https://cdn.pushalert.co/sw-12482.js']
       }
-    })
-  )
-);
+    }
+  ]
+]);
+
+// withOffline(
+//   withTypescript(
+//     withManifest({
+//       manifest: {
+//         ...manifestConfig
+//       },
+//       workboxOpts: {
+//         importScripts: ["https://cdn.pushalert.co/sw-12482.js"]
+//       }
+//     })
+//   )
+// );
