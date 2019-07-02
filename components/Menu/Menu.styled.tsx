@@ -61,4 +61,7 @@ export const IconInstagram = styled(SocialIcon)`
 
 export const CustomAppBar = styled(AppBar)`
   opacity: 0.85;
+  && {
+    z-index: 10;
+  }
 `;

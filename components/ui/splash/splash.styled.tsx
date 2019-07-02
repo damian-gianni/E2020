@@ -19,6 +19,7 @@ export const SplashContainer = styled.div`
   right: 0;
   bottom: 0;
   left: 0;
+  z-index: 15;
 `;
 
 const spin = keyframes`
