@@ -10,7 +10,7 @@ import {
 import { CustomCard } from "./Article.styled";
 
 export default ({ actionClick, content }) => (
-  <CustomCard onClick={() => actionClick(content)}>
+  <CustomCard onClick={event => actionClick({ event, content })}>
     <CardActionArea>
       <CardMedia
         component="img"
@@ -22,9 +22,7 @@ export default ({ actionClick, content }) => (
         <Typography gutterBottom variant="h5" component="h2">
           {content.title}
         </Typography>
-        <Typography variant="body2" color="textSecondary" component="p">
-          {content.description}
-        </Typography>
+        {content.description()}
       </CardContent>
     </CardActionArea>
     {/* <CardActions>

@@ -1,5 +1,5 @@
 import WithTemplate from "../components/Template";
-import Splash from "../components/ui/splash";
+import Splash from "../components/ui/Splash";
 
 export default () => {
   return (

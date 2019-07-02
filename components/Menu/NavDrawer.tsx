@@ -75,14 +75,14 @@ export default ({ drawerOpened, toggleDrawer }) => {
               </Box>
             </ListItem>
           </Link>
-          <Link href="/album">
+          {/* <Link href="/album">
             <ListItem button key={"Album de Figuritas"} divider={true}>
               <Box fontSize={12} fontWeight="fontWeightBold">
                 <CustomIcon fontSize={"small"}>photo_album</CustomIcon>Album de
                 Figuritas
               </Box>
             </ListItem>
-          </Link>
+          </Link> */}
           <Link href="/museo">
             <ListItem button key={"Museo digital"} divider={true}>
               <Box fontSize={12} fontWeight="fontWeightBold">

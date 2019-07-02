@@ -13,8 +13,8 @@ export default () => {
     pdf: null
   });
 
-  const viewProject = project => {
-    setActiveProject(project);
+  const viewProject = ({ content }) => {
+    setActiveProject(content);
     setOpenModa(true);
   };
   return (
@@ -28,9 +28,9 @@ export default () => {
         </Box>
       </Typography>
       <ContentFlex>
-        {PROJECTS.map(project => {
-          return <Article actionClick={viewProject} content={project} />;
-        })}
+        {PROJECTS.map(project => (
+          <Article actionClick={viewProject} content={project} />
+        ))}
       </ContentFlex>
       <Modal
         open={openModal}
@@ -39,7 +39,12 @@ export default () => {
         }}
       >
         {activeProject.pdf !== null && (
-          <iframe src={activeProject.pdf} width="100%" height="500" frameBorder="0"/>
+          <iframe
+            src={activeProject.pdf}
+            width="100%"
+            height="500"
+            frameBorder="0"
+          />
         )}
       </Modal>
     </WithTemplate>
