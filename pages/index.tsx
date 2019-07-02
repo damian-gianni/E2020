@@ -1,5 +1,10 @@
 import WithTemplate from "../components/Template";
 import Splash from "../components/ui/Splash";
+import dynamic from "next/dynamic";
+
+dynamic(async () => await import("../resources/web-notifications"), {
+  ssr: false
+});
 
 export default () => {
   return (
