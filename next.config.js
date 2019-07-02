@@ -75,7 +75,7 @@ const manifestConfig = {
     }
   ],
   theme_color: "#ffffff",
-  gcm_sender_id: "539876079581",
+  gcm_sender_id: "103953800507",
   background_color: "#ffffff",
   start_url: "https://estudiantes2020.com.ar",
   display: "standalone",
@@ -83,7 +83,7 @@ const manifestConfig = {
 };
 
 module.exports = withPlugins([
-  [withOffline, { devSwSrc: "https://cdn.pushalert.co/sw-12482.js" }],
+  [withOffline],
   [withTypescript],
   [
     withManifest,
