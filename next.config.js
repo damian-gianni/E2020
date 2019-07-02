@@ -81,12 +81,30 @@ const manifestConfig = {
   display: "standalone",
   orientation: "portrait"
 };
+
+const manifestConfig2 = {
+  name: "Estudiantes202050 Push Notification",
+  short_name: "estudiantes202050",
+  gcm_sender_id: "539876079581",
+  start_url: "/",
+  display: "standalone",
+  icons: [
+    {
+      src: "https://cdn.pushalert.co/img/pushalert-square-icon.png",
+      sizes: "192x192",
+      type: "image/png"
+    }
+  ]
+};
 module.exports = withPlugins([
   [
     withOffline,
     {
       workboxOpts: {
-        importScripts: ["https://cdn.pushalert.co/sw-12482.js", "https://estudiantes2020.sfo2.digitaloceanspaces.com/scripts/sw.js"]
+        importScripts: [
+          "https://cdn.pushalert.co/sw-12482.js",
+          "https://estudiantes2020.sfo2.digitaloceanspaces.com/scripts/sw.js"
+        ]
       }
     }
   ],
@@ -95,7 +113,7 @@ module.exports = withPlugins([
     withManifest,
     {
       manifest: {
-        ...manifestConfig
+        ...manifestConfig2
       }
     }
   ]
