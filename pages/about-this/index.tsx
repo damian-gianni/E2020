@@ -5,7 +5,7 @@ import styled from "styled-components";
 const PROJECT = {
   key: 1,
   title:
-    "Proyecto integrador E2020. Que es, de donde venimos y hacia donde Vamos",
+    "Que es, de donde venimos y hacia donde Vamos",
   description: () => (
     <div style={{ lineHeight: "28px", fontSize: "18px" }}>
       <p>
@@ -44,16 +44,16 @@ const PROJECT = {
   ),
   image: {
     url:
-      "https://estudiantes2020.sfo2.digitaloceanspaces.com/projects/project_principal_600x450.jpg",
+      "https://estudiantes2020.sfo2.digitaloceanspaces.com/portada_web.jpg",
     alt: "Tu propuesta electoral"
-  },
-  pdf:
-    "https://drive.google.com/file/d/1aIV66JYlW0OwgjSHx-MQ8AM_cRS0GX4E/preview"
+  }
 };
 const CustomWrapper = styled.div`
-  width: 80%;
-  margin: 0 auto;
-  padding: 20px 80px;
+  @media (min-width: 1024px) {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px 80px;
+  }
 `;
 
 export default () => (
