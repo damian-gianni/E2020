@@ -75,7 +75,7 @@ const manifestConfig = {
     }
   ],
   theme_color: "#ffffff",
-  gcm_sender_id: "103953800507",
+  gcm_sender_id: "482941778795",
   background_color: "#ffffff",
   start_url: "https://estudiantes2020.com.ar",
   display: "standalone",
@@ -83,7 +83,14 @@ const manifestConfig = {
 };
 
 module.exports = withPlugins([
-  [withOffline],
+  [
+    withOffline,
+    {
+      workboxOpts: {
+        importScripts: ["https://cdn.onesignal.com/sdks/OneSignalSDKWorker.js"]
+      }
+    }
+  ],
   [withTypescript],
   [
     withManifest,
