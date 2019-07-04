@@ -1,6 +1,15 @@
 import styled, { css } from "styled-components";
 
-export const CardContent = styled.div``;
+export const CardContent = styled.section`
+  width: 100%;
+  border: 1px solid #d4d4d4;
+  border-radius: 5px;
+  margin: 10px 0 10px;
+  @media (min-width: 1024px) {
+    width: 24.25%;
+    margin: 10px 1% 10px 0;
+  }
+`;
 
 export const HeaderCard = styled.div`
   ${props =>

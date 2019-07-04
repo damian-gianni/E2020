@@ -12,10 +12,16 @@ import {
 } from "./personal-card.styled";
 
 export default ({ person }) => (
-  <CardContent>
+  <CardContent id={person.name}>
     <HeaderCard image={person.imageHeader} />
     <FooterCard>
-      <Avatar src={person.imageProfile} />
+      <Avatar
+        src={
+          person.imageProfile
+            ? person.imageProfile
+            : "https://estudiantes2020.sfo2.digitaloceanspaces.com/profiles/silueta.jpg"
+        }
+      />
       <NameLabel>
         {person.name} {person.lastName}
       </NameLabel>
