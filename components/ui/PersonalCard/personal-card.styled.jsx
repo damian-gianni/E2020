@@ -58,6 +58,7 @@ export const OcupationLabel = styled.span`
 export const FooterCard = styled.div`
   margin-top: -60px;
   text-align: center;
+  padding-bottom: 15px;
 `;
 
 export const Avatar = styled.img`
