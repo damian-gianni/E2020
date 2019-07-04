@@ -18,7 +18,7 @@ export default ({ resources, section }) => {
             height: "300px"
           },
           "@media (min-width: 1024px)": {
-            width: "960px",
+            width: "100%",
             height: "480px"
           }
         }}
