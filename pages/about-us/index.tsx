@@ -36,7 +36,7 @@ const PEOPLE = [
     instagram: "https://www.instagram.com/leito.medina",
     imageHeader:
       "https://estudiantes2020.sfo2.digitaloceanspaces.com/portada_web.jpg",
-    imageProfile: null,
+    imageProfile: "https://estudiantes2020.sfo2.digitaloceanspaces.com/profiles/leonardoM.jpg",
     ocupation: "Ingeniero industrial"
   },
   {
@@ -49,7 +49,7 @@ const PEOPLE = [
       "https://estudiantes2020.sfo2.digitaloceanspaces.com/portada_web.jpg",
     imageProfile:
       "https://estudiantes2020.sfo2.digitaloceanspaces.com/profiles/german.jpg",
-    ocupation: null
+    ocupation: "Lic. en Comercialización"
   },
   {
     name: "Ariel Adan",
@@ -82,6 +82,16 @@ const PEOPLE = [
       "https://estudiantes2020.sfo2.digitaloceanspaces.com/portada_web.jpg",
     imageProfile:
       "https://estudiantes2020.sfo2.digitaloceanspaces.com/profiles/daniel.jpg",
+    ocupation: null
+  },
+  {
+    name: "Cristian",
+    lastName: "Belate",
+    facebook: "https://www.facebook.com/bf.cristian",
+    imageHeader:
+      "https://estudiantes2020.sfo2.digitaloceanspaces.com/portada_web.jpg",
+    imageProfile:
+      "https://estudiantes2020.sfo2.digitaloceanspaces.com/profiles/cristian.jpg",
     ocupation: null
   },
   {
