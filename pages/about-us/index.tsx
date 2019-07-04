@@ -83,6 +83,28 @@ const PEOPLE = [
     imageProfile:
       "https://estudiantes2020.sfo2.digitaloceanspaces.com/profiles/daniel.jpg",
     ocupation: null
+  },
+  {
+    name: "Mauro Nicolas",
+    lastName: "Gulisano",
+    facebook: "https://www.facebook.com/gulito.bakan",
+    twitter: "https://www.twitter.com/Mauro.Gulisano",
+    instagram: "https://www.instagram.com/maurooo_nicolas",
+    imageHeader:
+      "https://estudiantes2020.sfo2.digitaloceanspaces.com/portada_web.jpg",
+    imageProfile:
+      "https://estudiantes2020.sfo2.digitaloceanspaces.com/profiles/mauro.jpg",
+    ocupation: null
+  },
+  {
+    name: "Hernán",
+    lastName: "Ivanoff",
+    facebook: "https://www.facebook.com/SDCNM",
+    imageHeader:
+      "https://estudiantes2020.sfo2.digitaloceanspaces.com/portada_web.jpg",
+    imageProfile:
+      "https://estudiantes2020.sfo2.digitaloceanspaces.com/profiles/hernan.jpg",
+    ocupation: null
   }
 ];
 
