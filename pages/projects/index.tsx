@@ -15,7 +15,7 @@ export default () => {
 
   const viewProject = ({ content }) => {
     setActiveProject(content);
-    setOpenModa(true);
+    setOpenModal(true);
   };
   return (
     <WithTemplate>
@@ -35,7 +35,7 @@ export default () => {
       <Modal
         open={openModal}
         onClose={() => {
-          setOpenModa(false);
+          setOpenModal(false);
         }}
       >
         {activeProject.pdf !== null && (

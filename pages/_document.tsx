@@ -9,7 +9,12 @@ import theme from "../theme";
 class MyDocument extends Document {
   render() {
     return (
-      <html lang="es">
+      <html
+        lang="es"
+        style={{
+          scrollBehavior: "smooth"
+        }}
+      >
         <Head>
           <Manifest />
           <meta charSet="utf-8" />
