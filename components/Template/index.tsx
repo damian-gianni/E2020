@@ -4,7 +4,7 @@ import { CssBaseline } from "@material-ui/core";
 import Menu from "../Menu";
 import { MainSection } from "./Template.styled";
 
-const WithTheme = ({ children }) => {
+const WithTheme = ({ isHome = false, children }) => {
   return (
     <div>
       <Head>
@@ -12,7 +12,7 @@ const WithTheme = ({ children }) => {
       </Head>
       <CssBaseline />
       <Menu />
-      <MainSection>{children}</MainSection>
+      <MainSection isHome={isHome}>{children}</MainSection>
     </div>
   );
 };
