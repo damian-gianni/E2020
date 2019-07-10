@@ -1,5 +1,4 @@
 const withPlugins = require("next-compose-plugins");
-const withTypescript = require("@zeit/next-typescript");
 const withOffline = require("next-offline");
 const withManifest = require("next-manifest");
 
@@ -94,7 +93,6 @@ module.exports = withPlugins([
       }
     }
   ],
-  [withTypescript],
   [
     withManifest,
     {

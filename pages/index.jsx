@@ -1,8 +1,8 @@
 import styled, { css, keyframes } from "styled-components";
-import Article from "../components/Article";
-import WithTemplate from "../components/Template";
-import Splash from "../components/ui/Splash";
-import Button from "../components/ui/Button";
+import Article from "components/Article";
+import WithTemplate from "components/Template";
+import Splash from "components/ui/Splash";
+import Button from "components/ui/Button";
 import { useState } from "react";
 
 const HomeContent = styled.section`
