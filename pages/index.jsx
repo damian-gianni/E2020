@@ -203,6 +203,7 @@ export default () => {
           <img
             style={{ width: "100%" }}
             src="https://estudiantes2020.sfo2.digitaloceanspaces.com/mural-muestra-UNTREF.jpeg"
+            alt="Mural UNTREF"
           />
         </ContentSection>
         <ContentSection onClick={() => setVisible(!visible)}>
@@ -215,6 +216,7 @@ export default () => {
           <img
             style={{ width: "100%" }}
             src="https://estudiantes2020.sfo2.digitaloceanspaces.com/app_800x417.jpg"
+            alt="Aplicación E2020"
           />
         </ContentSection>
       </CustomSection>
