@@ -7,7 +7,7 @@ const pem = require("pem");
 const dev = process.env.NODE_ENV !== "production";
 const app = next({ dev });
 const handle = app.getRequestHandler();
-const { HOST = "localhost", HTTPS } = process.env;
+const { HOST = "localhost", HTTPS = dev ? false : true } = process.env;
 const PORT = dev ? 3000 : 3000;
 
 app
@@ -21,7 +21,19 @@ app
               key: keys.serviceKey,
               cert: keys.certificate
             },
-            server
+            (req, res) => {
+              const parsedUrl = parse(req.url, true);
+              const { pathname } = parsedUrl;
+
+              // handle GET request to /service-worker.js
+              if (pathname === "/service-worker.js") {
+                const filePath = join(__dirname, ".next", pathname);
+
+                app.serveStatic(req, res, filePath);
+              } else {
+                handle(req, res, parsedUrl);
+              }
+            }
           )
           .listen(PORT, err => {
             if (err) throw err;
