@@ -82,10 +82,13 @@ const manifestConfig = {
   orientation: "portrait"
 };
 
+// ToDo: Comento el withOffline porque no funciona sino
+
 module.exports = withPlugins([
   [
     withOffline,
     {
+      generateSw: true,
       workboxOpts: {
         importScripts: ["https://cdn.onesignal.com/sdks/OneSignalSDKWorker.js"]
       }
