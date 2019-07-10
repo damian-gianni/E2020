@@ -17,7 +17,7 @@
     "@types/styled-jsx": "^2.2.8",
     "@zeit/next-typescript": "1.1.1",
     "material-ui": "^1.0.0-beta.47",
-    "next": "latest",
+    "next": "8.1.0",
     "next-compose-plugins": "^2.2.0",
     "next-manifest": "^2.0.0",
     "next-offline": "^4.0.2",
