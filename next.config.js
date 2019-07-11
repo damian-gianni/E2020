@@ -76,7 +76,7 @@ const manifestConfig = {
   theme_color: "#ffffff",
   gcm_sender_id: "482941778795",
   background_color: "#ffffff",
-  start_url: "https://estudiantes2020.com.ar",
+  start_url: "/",
   display: "standalone",
   orientation: "portrait"
 };
