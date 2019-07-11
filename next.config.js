@@ -82,8 +82,8 @@ const manifestConfig = {
 };
 
 // ToDo: Comento el withOffline porque no funciona sino
-
-module.exports = withPlugins([
+module.exports = withPlugins(
+  [withOffline],
   [
     withManifest,
     {
@@ -91,14 +91,24 @@ module.exports = withPlugins([
         ...manifestConfig
       }
     }
-  ],
-  [
-    withOffline,
-    {
-      generateSw: true,
-      workboxOpts: {
-        importScripts: ["https://cdn.onesignal.com/sdks/OneSignalSDKWorker.js"]
-      }
-    }
   ]
-]);
+);
+// module.exports = withPlugins([
+//   [
+//     withManifest,
+//     {
+//       manifest: {
+//         ...manifestConfig
+//       }
+//     }
+//   ],
+//   [
+//     withOffline,
+//     {
+//       generateSw: true,
+//       workboxOpts: {
+//         importScripts: ["https://cdn.onesignal.com/sdks/OneSignalSDKWorker.js"]
+//       }
+//     }
+//   ]
+// ]);
