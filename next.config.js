@@ -85,20 +85,12 @@ const manifestConfig = {
 
 module.exports = withPlugins([
   [
-    withOffline,
-    {
-      generateSw: true,
-      workboxOpts: {
-        importScripts: ["https://cdn.onesignal.com/sdks/OneSignalSDKWorker.js"]
-      }
-    }
-  ],
-  [
     withManifest,
     {
       manifest: {
         ...manifestConfig
       }
     }
-  ]
+  ],
+  [withOffline]
 ]);
