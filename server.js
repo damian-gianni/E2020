@@ -38,7 +38,7 @@ app
           } else {
             handle(req, res, parsedUrl);
           }
-          res.end("Initialize with HTTPS\n");
+          // res.end("Initialize with HTTPS\n");
         })
         .listen(PORT, err => {
           if (err) throw err;
