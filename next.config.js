@@ -92,5 +92,13 @@ module.exports = withPlugins([
       }
     }
   ],
-  [withOffline]
+  [
+    withOffline,
+    {
+      generateSw: true,
+      workboxOpts: {
+        importScripts: ["https://cdn.onesignal.com/sdks/OneSignalSDKWorker.js"]
+      }
+    }
+  ]
 ]);
