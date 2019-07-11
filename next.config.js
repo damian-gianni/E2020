@@ -83,7 +83,15 @@ const manifestConfig = {
 
 // ToDo: Comento el withOffline porque no funciona sino
 module.exports = withPlugins(
-  [withOffline],
+  [
+    withOffline,
+    {
+      generateSw: true,
+      workboxOpts: {
+        importScripts: ["https://cdn.onesignal.com/sdks/OneSignalSDKWorker.js"]
+      }
+    }
+  ],
   [
     withManifest,
     {
