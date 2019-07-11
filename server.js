@@ -26,7 +26,7 @@ app
 
       https
         .createServer(options, (req, res) => {
-          res.writeHead(200);
+          // res.writeHead(200);
           const parsedUrl = parse(req.url, true);
           const { pathname } = parsedUrl;
 
