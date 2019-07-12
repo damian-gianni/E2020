@@ -29,9 +29,7 @@ const ContentArticle = ({ actionClick, content, facebookConnect }) => (
     {facebookConnect && (
       <CardActions>
         <Like
-          href={`/projects/project?slug=${
-            content.slug
-          }`}
+          href={`/projects/project?slug=${content.slug}`}
           colorScheme="dark"
           showFaces
           share
@@ -53,6 +51,6 @@ export default props => {
       <ContentArticle {...props} />
     </FacebookProvider>
   ) : (
-    <ContentArticle actionClick content facebookConnect />
+    <ContentArticle {...props} />
   );
 };
