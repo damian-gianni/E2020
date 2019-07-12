@@ -6,9 +6,10 @@ import PROJECTS from "../../resources/projects";
 import { ContentFlex } from "./projects.styled";
 import { Modal } from "../../components/ui/Modal";
 import { useState } from "react";
+import dynamic from "next/dynamic";
 
 export default () => {
-  const [openModal, setOpenModa] = useState(false);
+  const [openModal, setOpenModal] = useState(false);
   const [activeProject, setActiveProject] = useState({
     pdf: null
   });
@@ -17,6 +18,7 @@ export default () => {
     setActiveProject(content);
     setOpenModal(true);
   };
+
   return (
     <WithTemplate>
       <Head>
@@ -29,7 +31,11 @@ export default () => {
       </Typography>
       <ContentFlex>
         {PROJECTS.map(project => (
-          <Article actionClick={viewProject} content={project} />
+          <Article
+            actionClick={viewProject}
+            content={project}
+            facebookConnect={true}
+          />
         ))}
       </ContentFlex>
       <Modal

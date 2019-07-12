@@ -20,7 +20,8 @@ export default [
       alt: "Tu propuesta electoral"
     },
     pdf:
-      "https://drive.google.com/file/d/1aIV66JYlW0OwgjSHx-MQ8AM_cRS0GX4E/preview"
+      "https://drive.google.com/file/d/1aIV66JYlW0OwgjSHx-MQ8AM_cRS0GX4E/preview",
+    slug: "proyecto-integrador-e2020"
   },
   {
     key: 2,
@@ -42,7 +43,8 @@ export default [
       alt: "Transparencia E2020"
     },
     pdf:
-      "https://drive.google.com/file/d/16fUh99DN2995aS-empAJj0VknrdJtR1x/preview"
+      "https://drive.google.com/file/d/16fUh99DN2995aS-empAJj0VknrdJtR1x/preview",
+    slug: "programa-transparencia"
   },
   {
     key: 3,
@@ -64,7 +66,8 @@ export default [
       alt: "Modernización tecnológica"
     },
     pdf:
-      "https://drive.google.com/file/d/1W2z9b5JkmGpZ33ztNbfgWkioWhf-ws0R/preview"
+      "https://drive.google.com/file/d/1W2z9b5JkmGpZ33ztNbfgWkioWhf-ws0R/preview",
+    slug: "plan-modernizacion-tecnologica"
   },
   {
     key: 4,
@@ -85,7 +88,8 @@ export default [
       alt: "Depto. de la mujer"
     },
     pdf:
-      "https://drive.google.com/file/d/17qdCDkOFhwzkqs-tbjd2v0KivmgmxvwG/preview"
+      "https://drive.google.com/file/d/17qdCDkOFhwzkqs-tbjd2v0KivmgmxvwG/preview",
+    slug: "departamento-mujer"
   },
   {
     key: 5,
@@ -106,6 +110,7 @@ export default [
       alt: "Glorias Estudiantes"
     },
     pdf:
-      "https://drive.google.com/file/d/1M2DKaTHOdjh2AxqdcNmFNZkYS7vpZNr1/preview"
+      "https://drive.google.com/file/d/1M2DKaTHOdjh2AxqdcNmFNZkYS7vpZNr1/preview",
+    slug: "glorias-cae"
   }
 ];

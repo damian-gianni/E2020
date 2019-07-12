@@ -75,6 +75,10 @@ class MyDocument extends Document {
             src="https://estudiantes2020.sfo2.digitaloceanspaces.com/scripts/sw.js"
             async
           />
+          <script
+            src="https://estudiantes2020.sfo2.digitaloceanspaces.com/scripts/utils.js"
+            async
+          />
         </Head>
         <body>
           <Main />
