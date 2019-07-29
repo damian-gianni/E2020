@@ -115,6 +115,16 @@ const PEOPLE = [
     imageProfile:
       "https://estudiantes2020.sfo2.digitaloceanspaces.com/profiles/hernan.jpg",
     ocupation: null
+  },
+  {
+    name: "Alejandro",
+    lastName: "Telias",
+    facebook: "https://www.facebook.com/alejandro.telias.5",
+    imageHeader:
+      "https://estudiantes2020.sfo2.digitaloceanspaces.com/portada_web.jpg",
+    imageProfile:
+      "https://estudiantes2020.sfo2.digitaloceanspaces.com/profiles/aletelias.jpg",
+    ocupation: null
   }
 ];
 
